@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Покрокова інтерактивна інструкція з UI/UX-дизайну випускного ІТ-проєкту для 10–11 класів.">
+  <meta name="theme-color" content="#101326">
+  <title>Етап 1 · UI/UX-дизайн | OR Learning Lab</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти до основного вмісту</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="OR Learning Lab — на початок сторінки">
+        <img src="assets/logo.svg" width="42" height="42" alt="" aria-hidden="true">
+        <span>OR <strong>Learning Lab</strong><small>Випускний ІТ-проєкт · 10–11 класи</small></span>
+      </a>
+      <nav class="top-nav" aria-label="Навігація сторінкою">
+        <a href="#roadmap">Етапи</a><a href="#requirements">Результат</a><a href="#assessment">Оцінювання</a>
+      </nav>
+      <button class="button button-quiet" id="print-page" type="button">Друк / PDF</button>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero container" id="top" aria-labelledby="page-title">
+      <div class="eyebrow">НАВЧАЛЬНИЙ МАРШРУТ / ЕТАП 01</div>
+      <h1 id="page-title">Від ідеї до <span>UI/UX-дизайну</span> цифрового продукту</h1>
+      <p class="lead">Дослідіть проблему, знайдіть референси, намалюйте ескізи на папері, створіть адаптивні макети у Figma та підготуйте три перші сторінки до розроблення.</p>
+      <div class="hero-meta" aria-label="Параметри роботи"><span>10–11 класи</span><span>1–2 учні в команді</span><span>Орієнтовно 6–8 навчальних пар</span><span>Figma</span></div>
+      <div class="hero-actions"><a class="button button-primary" href="#roadmap">Почати роботу <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="#requirements">Що потрібно здати</a></div>
+    </section>
+    <section class="container summary-grid" aria-label="Головні результати">
+      <article class="metric"><strong>07</strong><span>послідовних кроків</span></article>
+      <article class="metric"><strong>09</strong><span>фінальних макетів</span></article>
+      <article class="metric"><strong>06+</strong><span>наборів компонентів</span></article>
+      <article class="metric"><strong>12</strong><span>максимум балів</span></article>
+    </section>
+    <div class="container content-layout">
+      <aside class="sidebar" aria-label="Зміст інструкції">
+        <nav class="side-nav" aria-label="Кроки роботи">
+          <h2>Маршрут</h2>
+          <ol>
+            <li><a href="#step-1">01 · Ідея та проблема</a></li>
+            <li><a href="#step-2">02 · Референси</a></li>
+            <li><a href="#step-3">03 · Ескізи на папері</a></li>
+            <li><a href="#step-4">04 · Адаптивні wireframes</a></li>
+            <li><a href="#step-5">05 · Дизайн-система</a></li>
+            <li><a href="#step-6">06 · Три сторінки</a></li>
+            <li><a href="#step-7">07 · Прототип</a></li>
+          </ol>
+          <a href="#requirements">Чекліст здавання</a><a href="#assessment">Оцінювання</a>
+        </nav>
+        <section class="progress-panel" aria-labelledby="progress-heading">
+          <h2 id="progress-heading">Ваш прогрес</h2>
+          <p><output id="progress-count">0 із 10</output> пунктів виконано</p>
+          <progress id="progress-bar" value="0" max="10">0 із 10</progress>
+          <p class="hint">Позначки зберігаються лише в цьому браузері на цьому пристрої. Вони не надсилаються в Moodle.</p>
+          <button class="button button-quiet" id="reset-progress" type="button">Скинути позначки</button>
+        </section>
+      </aside>
+      <div class="main-column">
+        <section class="intro-panel" id="roadmap" aria-labelledby="roadmap-title">
+          <p class="eyebrow">ПЕРШ НІЖ ПОЧАТИ</p>
+          <h2 id="roadmap-title">Спочатку — зміст. Потім — дизайн.</h2>
+          <p>Не відкривайте Figma, доки не зможете коротко пояснити, кому потрібен ваш продукт, яку проблему він розв'язує та які дії користувач виконає в ньому. Результатом цього етапу буде не набір красивих картинок, а цілісна, перевірена система інтерфейсів.</p>
+        </section>
+        <section class="step" id="step-1" aria-labelledby="step1-title">
+          <div class="step-heading"><span class="step-number">01</span><div><p class="eyebrow">ДОСЛІДЖЕННЯ · 1 УРОК</p><h2 id="step1-title">Оберіть ідею та сформулюйте проблему</h2></div></div>
+          <p>Оберіть тему з каталогу або запропонуйте власну. Перевірте, чи продукт справді допомагає конкретним людям, а не просто повторює чужий сайт.</p>
+          <ol class="task-list"><li>Запишіть робочу назву продукту та його призначення одним реченням.</li><li>Опишіть проблему, яку він вирішує, на конкретному прикладі.</li><li>Визначте цільову аудиторію: хто ці люди та в якій ситуації вони користуватимуться продуктом.</li><li>Сформулюйте три ключові функції, потрібні для розв'язання проблеми.</li><li>Поясніть, чим ваше рішення відрізнятиметься від існуючих.</li></ol>
+          <div class="example"><h3>Приклад · StudyFlow</h3><p><strong>Проблема:</strong> учні не встигають виконувати завдання через невдале планування. <strong>Аудиторія:</strong> старшокласники. <strong>Рішення:</strong> календар завдань, пріоритети та автоматичне перенесення невиконаних справ.</p></div>
+          <p class="deliverable"><strong>Результат:</strong> паспорт ідеї обсягом до однієї сторінки.</p>
+        </section>
+        <section class="step" id="step-2" aria-labelledby="step2-title">
+          <div class="step-heading"><span class="step-number">02</span><div><p class="eyebrow">АНАЛІЗ · 1 УРОК</p><h2 id="step2-title">Знайдіть та проаналізуйте референси</h2></div></div>
+          <p>Знайдіть не менше п'яти прикладів інтерфейсів. Аналізуйте навігацію, компонування, типографіку, кольори та сценарії взаємодії. Не копіюйте чужі макети.</p>
+          <ul class="resource-list"><li><a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">Behance — дизайн-кейси <span aria-hidden="true">↗</span></a></li><li><a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer">Dribbble — інтерфейсні рішення <span aria-hidden="true">↗</span></a></li><li><a href="https://mobbin.com/" target="_blank" rel="noopener noreferrer">Mobbin — сценарії застосунків <span aria-hidden="true">↗</span></a></li><li><a href="https://m3.material.io/" target="_blank" rel="noopener noreferrer">Material Design — система компонентів <span aria-hidden="true">↗</span></a></li></ul>
+          <ol class="task-list"><li>Збережіть п'ять прикладів із посиланнями на джерела.</li><li>Для кожного запишіть, яке рішення вам подобається і чому.</li><li>Зазначте недоліки або обмеження кожного прикладу.</li><li>Створіть у Figma сторінку <code>01 — Research &amp; Moodboard</code>.</li><li>Сформуйте власний напрям дизайну: характер, кольори, типографіка, візуальні принципи.</li></ol>
+          <p class="deliverable"><strong>Результат:</strong> moodboard із п'ятьма референсами та коротким аналізом кожного.</p>
+        </section>
+        <section class="step" id="step-3" aria-labelledby="step3-title">
+          <div class="step-heading"><span class="step-number">03</span><div><p class="eyebrow">ЕСКІЗУВАННЯ · 1 УРОК</p><h2 id="step3-title">Намалюйте структуру на папері</h2></div></div>
+          <p>Візьміть аркуш та олівець. Поки що не обирайте кольори й шрифти: зосередьтеся на логіці сторінок.</p>
+          <ol class="task-list"><li>Оберіть три перші сторінки, потрібні для основного сценарію користувача.</li><li>Намалюйте три ескізи для комп'ютера: шапка, навігація, основні блоки, форми та кнопки.</li><li>Намалюйте три мобільні ескізи тих самих сторінок.</li><li>Позначте стрілками, куди ведуть головні кнопки.</li><li>Сфотографуйте ескізи та розмістіть на сторінці <code>02 — Paper Sketches</code> у Figma.</li></ol>
+          <p class="deliverable"><strong>Результат:</strong> щонайменше шість паперових ескізів — три desktop і три mobile.</p>
+        </section>
+        <section class="step" id="step-4" aria-labelledby="step4-title">
+          <div class="step-heading"><span class="step-number">04</span><div><p class="eyebrow">СТРУКТУРА · 1 УРОК</p><h2 id="step4-title">Створіть адаптивні wireframes</h2></div></div>
+          <p>Перенесіть ескізи у Figma у вигляді низькодеталізованих макетів. Використовуйте прості прямокутники, текстові блоки й нейтральні кольори.</p>
+          <div class="device-grid" aria-label="Рекомендовані навчальні ширини фреймів"><div><span class="device-icon desktop" aria-hidden="true"></span><strong>Desktop</strong><span>1440 px</span></div><div><span class="device-icon tablet" aria-hidden="true"></span><strong>Tablet</strong><span>768 px</span></div><div><span class="device-icon mobile" aria-hidden="true"></span><strong>Mobile</strong><span>390 px</span></div></div>
+          <p class="hint">Це стартові ширини фреймів для навчання, а не жорсткі межі всіх пристроїв.</p>
+          <ol class="task-list"><li>Створіть три wireframes для комп'ютера.</li><li>Адаптуйте їх для планшета: перегляньте колонки, відступи та навігацію.</li><li>Створіть мобільні версії: змініть компонування, а не просто зменште масштаб.</li><li>Перевірте, чи зберігається головний користувацький сценарій на кожній ширині.</li></ol>
+          <p class="deliverable"><strong>Результат:</strong> дев'ять wireframes на сторінці <code>03 — Wireframes</code>.</p>
+        </section>
+        <section class="step" id="step-5" aria-labelledby="step5-title">
+          <div class="step-heading"><span class="step-number">05</span><div><p class="eyebrow">СИСТЕМА · 2 УРОКИ</p><h2 id="step5-title">Створіть дизайн-систему та компоненти</h2></div></div>
+          <p>На сторінці <code>04 — Design System</code> створіть узгоджену систему стилів і компонентів, яку можна повторно використовувати в усіх макетах.</p>
+          <ol class="task-list"><li>Визначте основні, фонові, текстові й семантичні кольори. Перевірте контраст.</li><li>Створіть стилі типографіки: заголовки, основний текст, підписи, кнопки.</li><li>Визначте шкалу відступів, наприклад 4, 8, 12, 16, 24, 32 і 48 px.</li><li>Створіть компоненти з Auto Layout: кнопка, поле введення, картка, навігація, бейдж, чекбокс.</li><li>Об'єднайте стани компонентів у набори варіантів (Variants).</li><li>Налаштуйте властивості компонентів та перевірте, що зміни в основному компоненті відображаються в екземплярах.</li></ol>
+          <div class="table-scroll"><table><caption>Мінімальні набори компонентів</caption><thead><tr><th scope="col">Компонент</th><th scope="col">Варіанти</th></tr></thead><tbody><tr><th scope="row">Button</th><td>Primary / Secondary / Disabled</td></tr><tr><th scope="row">Input</th><td>Default / Focus / Error</td></tr><tr><th scope="row">Card</th><td>Default / Hover</td></tr><tr><th scope="row">Navigation</th><td>Desktop / Mobile</td></tr><tr><th scope="row">Badge</th><td>Success / Warning / Error</td></tr><tr><th scope="row">Checkbox</th><td>Checked / Unchecked</td></tr></tbody></table></div>
+          <p class="deliverable"><strong>Результат:</strong> власна дизайн-система та щонайменше шість наборів компонентів із варіантами.</p>
+        </section>
+        <section class="step" id="step-6" aria-labelledby="step6-title">
+          <div class="step-heading"><span class="step-number">06</span><div><p class="eyebrow">ВІЗУАЛЬНИЙ ДИЗАЙН · 2–3 УРОКИ</p><h2 id="step6-title">Оформіть три перші сторінки</h2></div></div>
+          <p>Перетворіть wireframes на повноцінні макети. Використовуйте лише компоненти, стилі й правила, визначені у власній дизайн-системі.</p>
+          <ol class="task-list"><li>Завершіть три сторінки для комп'ютера.</li><li>Замініть випадкові заповнювачі реалістичними демонстраційними даними.</li><li>Адаптуйте кожну сторінку для планшета.</li><li>Підготуйте мобільні версії з продуманою навігацією.</li><li>Перевірте читабельність, контраст, візуальну ієрархію, відступи та узгодженість компонентів.</li><li>Розмістіть макети на сторінках <code>05 — Desktop</code>, <code>06 — Tablet</code>, <code>07 — Mobile</code>.</li></ol>
+          <div class="example"><h3>Приклад для StudyFlow</h3><p>Сторінка 1 — огляд навчальних завдань; сторінка 2 — календар; сторінка 3 — створення нового завдання. Для кожної сторінки створіть desktop, tablet і mobile версії.</p></div>
+          <p class="deliverable"><strong>Результат:</strong> дев'ять завершених дизайн-макетів — по три для кожного пристрою.</p>
+        </section>
+        <section class="step" id="step-7" aria-labelledby="step7-title">
+          <div class="step-heading"><span class="step-number">07</span><div><p class="eyebrow">ПЕРЕВІРКА · 1 УРОК</p><h2 id="step7-title">Зберіть та протестуйте прототип</h2></div></div>
+          <ol class="task-list"><li>У вкладці Prototype налаштуйте переходи між трьома сторінками.</li><li>Переконайтеся, що головні кнопки ведуть у відповідні екрани.</li><li>Сформулюйте одне практичне завдання для тестувальника.</li><li>Запропонуйте однокласнику виконати його без ваших підказок.</li><li>Запишіть щонайменше два спостереження або проблеми.</li><li>Внесіть виправлення й перевірте сценарій повторно.</li></ol>
+          <p class="deliverable"><strong>Результат:</strong> посилання на інтерактивний прототип і короткий звіт про тестування.</p>
+        </section>
+        <section class="section-panel" id="requirements" aria-labelledby="requirements-title">
+          <p class="eyebrow">КОНТРОЛЬ ЯКОСТІ</p><h2 id="requirements-title">Що потрібно здати</h2>
+          <p>Позначайте готові результати. Чекліст допомагає перевірити повноту роботи, але не замінює здавання завдання в Moodle.</p>
+          <div id="checklist" class="checklist" role="group" aria-label="Чекліст готовності"></div>
+          <div class="checklist-actions"><button class="button button-secondary" type="button" id="copy-checklist">Копіювати чекліст</button><p id="copy-status" class="status" role="status" aria-live="polite"></p></div>
+        </section>
+        <section class="section-panel" id="assessment" aria-labelledby="assessment-title">
+          <p class="eyebrow">КРИТЕРІЇ</p><h2 id="assessment-title">Оцінювання · 12 балів</h2>
+          <div class="table-scroll"><table><caption>Розподіл балів за результатами першого етапу</caption><thead><tr><th scope="col">Критерій</th><th scope="col">Максимум</th></tr></thead><tbody><tr><th scope="row">Ідея та аналіз референсів</th><td>2</td></tr><tr><th scope="row">Ескізи та логіка структури</th><td>2</td></tr><tr><th scope="row">Адаптивні wireframes</th><td>2</td></tr><tr><th scope="row">Дизайн-система, компоненти, варіанти</th><td>3</td></tr><tr><th scope="row">Три оформлені сторінки</th><td>2</td></tr><tr><th scope="row">Прототип і тестування</th><td>1</td></tr></tbody><tfoot><tr><th scope="row">Разом</th><td>12</td></tr></tfoot></table></div>
+          <p class="hint">Це запропонована рубрика для практичної роботи. Учитель може уточнити критерії в Moodle до початку оцінювання.</p>
+        </section>
+        <section class="section-panel" aria-labelledby="figma-title"><p class="eyebrow">ОРГАНІЗАЦІЯ</p><h2 id="figma-title">Структура файлу Figma</h2><ol class="figma-pages"><li>01 — Research &amp; Moodboard</li><li>02 — Paper Sketches</li><li>03 — Wireframes</li><li>04 — Design System</li><li>05 — Desktop</li><li>06 — Tablet</li><li>07 — Mobile</li><li>08 — Prototype &amp; Testing</li></ol><p>Називайте фрейми, шари й компоненти зрозуміло. Усі матеріали мають бути впорядковані, а посилання на Figma — відкриватися в режимі перегляду для вчителя.</p></section>
+        <section class="section-panel" aria-labelledby="submission-title"><p class="eyebrow">ФІНІШ</p><h2 id="submission-title">Як здати роботу</h2><ol class="task-list"><li>Перевірте всі пункти чекліста.</li><li>Відкрийте доступ до файлу Figma для перегляду.</li><li>Скопіюйте посилання на файл і на інтерактивний прототип.</li><li>У Moodle відкрийте завдання «Етап 1. UI/UX-дизайн» та надішліть посилання й короткий звіт відповідно до вимог учителя.</li></ol><p class="hint">Ця сторінка не надсилає результати до Moodle автоматично.</p></section>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><p><strong>OR Learning Lab</strong> · Випускні ІТ-проєкти · 10–11 класи</p><a href="#top">Повернутися вгору ↑</a></div></footer>
+</body>
+</html>
